@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="jquery/jquery.js"></script>
+  <script src="jquery-cookie/jquery.cookie.js"></script>
+  <script>
+    $.cookie('mzc','梦之重');
+    $.cookie('tzd','童装店');
+    $.cookie('lzj','辣子鸡');
+    $.cookie('lbf','老办法');
+
+    //获取全部
+    console.log($.cookie());
+    
+    //获取单个
+    console.log($.cookie('lzj'));
+
+    //在当前域名路径下设置会话cookie
+    $.cookie('pc','排除');
+  </script>
+</body>
+
+</html>
